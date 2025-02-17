@@ -30,7 +30,7 @@ window.addEventListener('scroll',()=>{
 
 //fetching news data from a website providing API.
 
-const Key = "ed550cf263a74984abe9b1c66873635d";
+const Key = "43daaac3ef364992b07a9e60d52d52bb";
 const catergory = 'general'
 const   pageSize = 5;   
 const fetchData = async (category, pageSize) => {
