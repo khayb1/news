@@ -30,10 +30,11 @@ window.addEventListener('scroll',()=>{
 //fetching news data from a website providing API.
 
 const Key = "43daaac3ef364992b07a9e60d52d52bb";
-// `https://newsapi.org/v2/top-headlines?country=us&category=${category}&pageSize=${pageSize}&apiKey=${Key}`
+const category = "general";
+const pageSize = 5;
 const fetchData = async (category, pageSize) => {
   try {
-    const url = "https://gnews.io/api/v4/search?q=example&apikey=ad7f00ed469a5ff6ce748f35bb6713c3" ;
+    const url =`https://newsapi.org/v2/top-headlines?country=us&category=${category}&pageSize=${pageSize}&apiKey=${Key}`
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
